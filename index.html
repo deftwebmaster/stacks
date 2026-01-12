@@ -1,0 +1,3016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharpStacks — Supplement Stacks for Miscalibrated Systems</title>
+    <meta name="description" content="Curated supplement stacks for focus, sleep, mood, energy, stress, and recovery. No affiliate links. No wellness fluff. Just what works.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sharpstacks.com">
+    <meta property="og:title" content="SharpStacks — Supplement Stacks for Miscalibrated Systems">
+    <meta property="og:description" content="Curated supplement stacks for focus, sleep, mood, energy, stress, and recovery. No affiliate links. No wellness fluff. Just what works.">
+    <meta property="og:image" content="https://sharpstacks.com/card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sharpstacks.com">
+    <meta name="twitter:title" content="SharpStacks — Supplement Stacks for Miscalibrated Systems">
+    <meta name="twitter:description" content="Curated supplement stacks for focus, sleep, mood, energy, stress, and recovery. No affiliate links. No wellness fluff. Just what works.">
+    <meta name="twitter:image" content="https://sharpstacks.com/card.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #FAF7F2;
+            --color-bg-alt: #F3EDE4;
+            --color-text: #1A1A1A;
+            --color-text-muted: #5C5C5C;
+            --color-red: #8B1E1E;
+            --color-red-dark: #6B1717;
+            --color-red-light: #A52A2A;
+            --color-border: #D9D2C7;
+            --color-border-light: #E8E3DB;
+            --font-serif: 'Instrument Serif', Georgia, serif;
+            --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --max-width: 820px;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2.5rem;
+            --spacing-xl: 4rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Header */
+        header {
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .site-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 400;
+            color: var(--color-red);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .site-tagline {
+            font-size: 1.125rem;
+            color: var(--color-text-muted);
+            margin-top: var(--spacing-sm);
+            max-width: 540px;
+        }
+
+        /* Philosophy Block */
+        .philosophy {
+            padding: var(--spacing-lg) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .philosophy p {
+            font-size: 1rem;
+            color: var(--color-text);
+            max-width: 600px;
+        }
+
+        .philosophy p + p {
+            margin-top: var(--spacing-sm);
+        }
+
+        .philosophy strong {
+            color: var(--color-red);
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        .nav-toc {
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            background: var(--color-bg);
+            z-index: 100;
+        }
+
+        .nav-toc ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .nav-toc a {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-toc a:hover {
+            color: var(--color-red);
+        }
+
+        /* Section Headers */
+        .section-header {
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            font-weight: 400;
+            color: var(--color-text);
+            letter-spacing: -0.01em;
+        }
+
+        .section-header p {
+            color: var(--color-text-muted);
+            margin-top: var(--spacing-xs);
+        }
+
+        /* Decision Tree */
+        .decision-tree {
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .decision-tree h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text);
+        }
+
+        .decision-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+
+        .decision-btn {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .decision-btn:hover {
+            border-color: var(--color-red);
+            color: var(--color-red);
+        }
+
+        .decision-btn.active {
+            background: var(--color-red);
+            border-color: var(--color-red);
+            color: white;
+        }
+
+        .decision-result {
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--color-border);
+            display: none;
+        }
+
+        .decision-result.visible {
+            display: block;
+        }
+
+        .decision-result p {
+            font-size: 0.9375rem;
+        }
+
+        .decision-result a {
+            color: var(--color-red);
+            font-weight: 500;
+        }
+
+        /* Stack Cards */
+        .stack {
+            border: 1px solid var(--color-border);
+            margin-bottom: var(--spacing-sm);
+            background: white;
+        }
+
+        .stack-header {
+            padding: var(--spacing-md);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+            transition: background 0.2s ease;
+        }
+
+        .stack-header:hover {
+            background: var(--color-bg-alt);
+        }
+
+        .stack-title {
+            font-family: var(--font-serif);
+            font-size: 1.375rem;
+            font-weight: 400;
+            color: var(--color-text);
+            line-height: 1.2;
+        }
+
+        .stack-meta {
+            font-size: 0.8125rem;
+            color: var(--color-text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .stack-meta span {
+            display: inline-block;
+            background: var(--color-bg-alt);
+            padding: 0.125rem 0.5rem;
+            margin-right: 0.25rem;
+            margin-top: 0.25rem;
+        }
+
+        .stack-toggle {
+            font-size: 1.5rem;
+            color: var(--color-red);
+            line-height: 1;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+
+        .stack.open .stack-toggle {
+            transform: rotate(45deg);
+        }
+
+        .stack-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .stack.open .stack-content {
+            max-height: 2000px;
+        }
+
+        .stack-inner {
+            padding: 0 var(--spacing-md) var(--spacing-md);
+        }
+
+        .stack-usecase {
+            font-size: 0.9375rem;
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-sm);
+            border-left: 2px solid var(--color-red);
+        }
+
+        /* Compound Table */
+        .compound-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9375rem;
+        }
+
+        .compound-table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            padding: var(--spacing-xs) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .compound-table td {
+            padding: var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) 0;
+            border-bottom: 1px solid var(--color-border-light);
+            vertical-align: top;
+        }
+
+        .compound-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .compound-name {
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .compound-dose {
+            color: var(--color-red-dark);
+            font-weight: 500;
+        }
+
+        .compound-timing {
+            color: var(--color-text-muted);
+        }
+
+        /* Stack Rationale */
+        .stack-rationale {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .stack-rationale h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .stack-rationale p {
+            font-size: 0.9375rem;
+        }
+
+        /* Tradeoff / Warning */
+        .stack-tradeoff {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+            padding-left: var(--spacing-sm);
+            border-left: 2px solid var(--color-border);
+        }
+
+        .stack-tradeoff strong {
+            color: var(--color-red);
+            font-weight: 600;
+        }
+
+        /* Interactions Warning */
+        .stack-interactions {
+            background: #FDF6F6;
+            border: 1px solid #E8C8C8;
+            padding: var(--spacing-sm);
+            margin-top: var(--spacing-sm);
+            font-size: 0.875rem;
+        }
+
+        .stack-interactions h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-red);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* Section Notes */
+        .section-notes {
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .section-notes h3 {
+            font-family: var(--font-serif);
+            font-size: 1.125rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .section-notes ul {
+            list-style: none;
+            font-size: 0.9375rem;
+        }
+
+        .section-notes li {
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .section-notes li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--color-red);
+        }
+
+        /* Footer */
+        footer {
+            padding: var(--spacing-xl) 0;
+            border-top: 1px solid var(--color-border);
+            margin-top: var(--spacing-xl);
+        }
+
+        footer p {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+        }
+
+        footer a {
+            color: var(--color-red);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: var(--spacing-sm);
+        }
+
+        /* Utility */
+        .highlight {
+            background: linear-gradient(to bottom, transparent 60%, rgba(139, 30, 30, 0.15) 60%);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .compound-table {
+                font-size: 0.875rem;
+            }
+            
+            .compound-table th:nth-child(3),
+            .compound-table td:nth-child(3) {
+                display: none;
+            }
+
+            .nav-toc ul {
+                gap: var(--spacing-sm);
+            }
+
+            .decision-options {
+                flex-direction: column;
+            }
+
+            .decision-btn {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">SharpStacks</h1>
+            <p class="site-tagline">Supplement stacks for miscalibrated systems. No affiliate links. No wellness fluff. What works, why it works, and when not to use it.</p>
+        </header>
+
+        <section class="philosophy">
+            <p><strong>This isn't about optimization.</strong> It's about correction. You're not broken—you're running the wrong protocol for your current state.</p>
+            <p>Every stack here answers one question: <em>What system is out of balance, and what nudges it back without wrecking something else?</em></p>
+        </section>
+
+        <nav class="nav-toc">
+            <ul>
+                <li><a href="#focus">Focus</a></li>
+                <li><a href="#sleep">Sleep</a></li>
+                <li><a href="#mood">Mood</a></li>
+                <li><a href="#energy">Energy</a></li>
+                <li><a href="#stress">Stress</a></li>
+                <li><a href="#gut">Gut-Brain</a></li>
+                <li><a href="#recovery">Recovery</a></li>
+            </ul>
+        </nav>
+
+        <!-- FOCUS SECTION -->
+        <section id="focus">
+            <div class="section-header">
+                <h2>Focus & Cognitive Enhancement</h2>
+                <p>Stacks for attention, clarity, and mental endurance.</p>
+            </div>
+
+            <div class="decision-tree" data-section="focus">
+                <h3>What's your failure mode?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="focus-baseline">Just foggy, nothing specific</button>
+                    <button class="decision-btn" data-target="focus-deep">Need to lock in for hours</button>
+                    <button class="decision-btn" data-target="focus-wired">Can focus, but anxious</button>
+                    <button class="decision-btn" data-target="focus-start">Can't start tasks</button>
+                    <button class="decision-btn" data-target="focus-acute">Need focus NOW</button>
+                    <button class="decision-btn" data-target="focus-lowstim">Jittery on stimulants</button>
+                </div>
+                <div class="decision-result" id="result-focus">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Baseline Focus Stack -->
+            <article class="stack" id="focus-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Baseline Focus Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily</span>
+                            <span>Low risk</span>
+                            <span>Foundational</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Clearer thinking, sustained attention, fewer "mental dropouts."</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Caffeine (low dose)</td>
+                                    <td class="compound-dose">50–100 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">100–200 mg</td>
+                                    <td class="compound-timing">With caffeine</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Creatine Monohydrate</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA/DHA)</td>
+                                    <td class="compound-dose">1–2 g combined</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Smooth stimulation + neuronal energy + long-term cognitive support. Caffeine and theanine balance each other. Creatine fuels ATP in the brain. Omega-3s maintain membrane fluidity over time.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Subtle. Won't feel "sharp" immediately, but stacks well with everything else. This is the base layer.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Deep Work Stack -->
+            <article class="stack" id="focus-deep">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Deep Work Stack</h3>
+                        <div class="stack-meta">
+                            <span>Task-bound</span>
+                            <span>Dopamine-heavy</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Long writing/coding sessions, analytical work.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Citicoline (CDP-Choline)</td>
+                                    <td class="compound-dose">250–500 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Tyrosine</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Rhodiola Rosea</td>
+                                    <td class="compound-dose">200–400 mg (3% rosavins)</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Caffeine (optional)</td>
+                                    <td class="compound-dose">50–100 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Dopamine + acetylcholine support under cognitive load. Tyrosine replenishes dopamine precursors. CDP-Choline feeds acetylcholine synthesis. Rhodiola reduces perceived effort and mental fatigue.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Can feel "wired" if overstacked or used daily without breaks. Cycle this one.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Don't stack with</h4>
+                            <p>MAOIs (dangerous interaction with tyrosine). Avoid daily use for more than 2–3 weeks without a break.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Racetam Core Stack -->
+            <article class="stack" id="focus-racetam">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Racetam Core Stack</h3>
+                        <div class="stack-meta">
+                            <span>Precision mode</span>
+                            <span>Gray-zone compounds</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Verbal fluency, mental clarity, pattern recognition.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Piracetam</td>
+                                    <td class="compound-dose">1,600–2,400 mg</td>
+                                    <td class="compound-timing">Morning, split OK</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Choline source (Alpha-GPC or CDP)</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">With piracetam</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening preferred</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Classic nootropic triangle. Piracetam modulates AMPA receptors and improves interhemispheric communication. Choline prevents depletion headaches and enhances the effect. Magnesium threonate crosses the BBB and supports long-term synaptic function.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Non-responders exist (~30%). Headaches if choline is mis-dosed. Start low, titrate up.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>Racetams are legal but unregulated in most countries. Not available in retail stores. One choline source at a time.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Stress-Resilient Focus Stack -->
+            <article class="stack" id="focus-wired">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Stress-Resilient Focus Stack</h3>
+                        <div class="stack-meta">
+                            <span>For anxious focus</span>
+                            <span>Cortisol management</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Focus despite anxiety, noise, or sleep debt.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (KSM-66 or Sensoril)</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">Morning or evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–300 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Caffeine (optional)</td>
+                                    <td class="compound-dose">50–100 mg</td>
+                                    <td class="compound-timing">Low dose only</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol management → cognitive consistency. Ashwagandha blunts the stress response. PS supports membrane integrity and lowers cortisol. Theanine smooths the edges without sedation.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Slight emotional flattening for some. Ashwagandha can cause apathy with extended use. Cycle it.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Executive Function Stack -->
+            <article class="stack" id="focus-start">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Executive Function Stack</h3>
+                        <div class="stack-meta">
+                            <span>Task initiation</span>
+                            <span>Slow build</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Planning, decision-making, task initiation.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Uridine Monophosphate</td>
+                                    <td class="compound-dose">150–300 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">CDP-Choline</td>
+                                    <td class="compound-dose">250–500 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">DHA</td>
+                                    <td class="compound-dose">1 g</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">B-Complex (active forms)</td>
+                                    <td class="compound-dose">Low/moderate</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Synaptic support + frontal-lobe bias. Uridine + DHA + choline is the "Mr. Happy Stack" for a reason—it supports phospholipid synthesis and dopamine receptor density. B-vitamins as cofactors.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Slow burn. More "mental organization" than stimulation. Takes weeks to feel.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Fast-Acting Focus -->
+            <article class="stack" id="focus-acute">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Fast-Acting Focus (Acute)</h3>
+                        <div class="stack-meta">
+                            <span>Right now</span>
+                            <span>Occasional use</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">You need to lock in now.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Caffeine</td>
+                                    <td class="compound-dose">75–150 mg</td>
+                                    <td class="compound-timing">Now</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">150–300 mg</td>
+                                    <td class="compound-timing">With caffeine</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Lion's Mane (fruiting body)</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">With or before</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Simple, predictable, fast. Caffeine + theanine is the most reliable acute nootropic combo that exists. Lion's Mane adds NGF support and a subtle clarity boost.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Acute only. Don't stack repeatedly all day. This is not a lifestyle—it's a tool.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Low-Stimulation Clarity Stack -->
+            <article class="stack" id="focus-lowstim">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Low-Stimulation Clarity Stack</h3>
+                        <div class="stack-meta">
+                            <span>No caffeine</span>
+                            <span>Slow build</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Focus without jitters or heart-rate rise.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Lion's Mane</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Bacopa Monnieri</td>
+                                    <td class="compound-dose">300 mg (55% bacosides)</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Calm clarity, memory bias. Lion's Mane promotes NGF. Bacopa enhances memory consolidation. Mag-threonate supports synaptic plasticity. Zero stimulant load.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Takes weeks. Zero "pop." If you need to feel something today, this isn't it.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>Bacopa can cause GI upset if taken without food. Some report fatigue initially—this usually resolves.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Focus Stack Guardrails</h3>
+                <ul>
+                    <li>Cycle stimulatory stacks (dopamine-heavy, racetams). 5 days on, 2 off. Or 3 weeks on, 1 week off.</li>
+                    <li>One choline source at a time. More is not better.</li>
+                    <li>Sleep debt caps returns—don't fight biology with dosage creep.</li>
+                    <li>If you're adding caffeine to everything, you're masking a different problem.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLEEP SECTION -->
+        <section id="sleep">
+            <div class="section-header">
+                <h2>Sleep & Recovery</h2>
+                <p>Stacks for falling asleep, staying asleep, and actually recovering.</p>
+            </div>
+
+            <div class="decision-tree" data-section="sleep">
+                <h3>What's broken?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="sleep-baseline">Just want better sleep</button>
+                    <button class="decision-btn" data-target="sleep-mind">Can't shut my brain off</button>
+                    <button class="decision-btn" data-target="sleep-cortisol">Wake up at 3am wired</button>
+                    <button class="decision-btn" data-target="sleep-quality">Sleep but don't recover</button>
+                    <button class="decision-btn" data-target="sleep-acute">Need to sleep NOW</button>
+                </div>
+                <div class="decision-result" id="result-sleep">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Foundational Sleep Stack -->
+            <article class="stack" id="sleep-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Foundational Sleep Stack</h3>
+                        <div class="stack-meta">
+                            <span>Nightly</span>
+                            <span>Low risk</span>
+                            <span>Boring on purpose</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Consistent sleep quality, fewer wake-ups.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate (or Threonate)</td>
+                                    <td class="compound-dose">200–400 mg elemental</td>
+                                    <td class="compound-timing">30–60 min before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Melatonin (low-dose)</td>
+                                    <td class="compound-dose">0.3–1 mg</td>
+                                    <td class="compound-timing">30 min before bed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Lowers core body temp, smooths sleep onset, supports sleep architecture. Glycine is underrated—it drops core temp and improves sleep quality. Magnesium relaxes. Melatonin at low doses signals timing without sedation.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Melatonin misuse ruins this stack. Higher doses don't work better—they fragment sleep and cause grogginess. Lower is better. 0.3mg often outperforms 5mg.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Anxiety / Overactive Mind Stack -->
+            <article class="stack" id="sleep-mind">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Overactive Mind Stack</h3>
+                        <div class="stack-meta">
+                            <span>Racing thoughts</span>
+                            <span>Non-sedating</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Can't shut your brain off.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (Sensoril preferred)</td>
+                                    <td class="compound-dose">125–250 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Reduces cognitive chatter without sedation. Theanine increases alpha waves—the "calm alert" state that precedes sleep. Ashwagandha (Sensoril specifically) reduces cortisol and mental hyperactivity. Magnesium supports GABA function.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Emotional flattening if overused. Ashwagandha can dull affect with extended use. Use as-needed, not forever.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cortisol Control Stack -->
+            <article class="stack" id="sleep-cortisol">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Cortisol Control Stack</h3>
+                        <div class="stack-meta">
+                            <span>3am wake-ups</span>
+                            <span>Wired but tired</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Early-morning wake-ups, wired-but-tired.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">Evening, with dinner</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha</td>
+                                    <td class="compound-dose">300 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol downshift → longer sleep window. PS blunts the cortisol spike that causes 3am wake-ups. Ashwagandha lowers baseline cortisol. Glycine supports sleep depth.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Too much PS can feel "flat" the next day. Start with 200mg.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sleep Architecture Stack -->
+            <article class="stack" id="sleep-quality">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Sleep Architecture & Recovery Stack</h3>
+                        <div class="stack-meta">
+                            <span>Non-restorative sleep</span>
+                            <span>Slow build</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">You sleep, but it's not restorative.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Apigenin</td>
+                                    <td class="compound-dose">25–50 mg</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (DHA-heavy)</td>
+                                    <td class="compound-dose">1 g</td>
+                                    <td class="compound-timing">With dinner</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Deep + REM bias, neurological recovery. Mag-threonate supports synaptic pruning. Apigenin is a mild anxiolytic that improves sleep depth. DHA supports neuronal membrane health.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Subtle. Requires consistency. Don't expect overnight results.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Acute Shutdown Stack -->
+            <article class="stack" id="sleep-acute">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Acute Shutdown Stack</h3>
+                        <div class="stack-meta">
+                            <span>Occasional use only</span>
+                            <span>Emergency tool</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Late night, high stimulation, must sleep.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">300–400 mg</td>
+                                    <td class="compound-timing">Now</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">5 g</td>
+                                    <td class="compound-timing">Now</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">Now</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Melatonin (optional)</td>
+                                    <td class="compound-dose">≤0.5 mg</td>
+                                    <td class="compound-timing">Now</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Fast parasympathetic tilt without heavy sedation. High-dose glycine drops core temp quickly. Magnesium and theanine calm the nervous system. Melatonin signals "it's time" without knocking you out.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Don't normalize emergency tools. If you need this regularly, something upstream is broken.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Sleep Stack Guardrails</h3>
+                <ul>
+                    <li>No strong GABAergics. This is a hard line. Dependency creep is real and brutal.</li>
+                    <li>Melatonin is a timing hormone, not a sedative. More is not better.</li>
+                    <li>Stack selection > stack size. Most sleep issues are mismatch, not deficiency.</li>
+                    <li>If nothing works, the problem isn't supplements—it's light, stress, or caffeine timing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- MOOD SECTION -->
+        <section id="mood">
+            <div class="section-header">
+                <h2>Mood & Emotional Regulation</h2>
+                <p>Stacks for restoring signal, range, and stability—not forced positivity.</p>
+            </div>
+
+            <div class="decision-tree" data-section="mood">
+                <h3>What's off?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="mood-baseline">Generally flat, low resilience</button>
+                    <button class="decision-btn" data-target="mood-anhedonia">Nothing feels rewarding</button>
+                    <button class="decision-btn" data-target="mood-irritable">Snappy, reactive, brittle</button>
+                    <button class="decision-btn" data-target="mood-numb">Emotionally muted, low warmth</button>
+                    <button class="decision-btn" data-target="mood-stress">Mood swings tied to stress</button>
+                </div>
+                <div class="decision-result" id="result-mood">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Baseline Mood Stability Stack -->
+            <article class="stack" id="mood-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Baseline Mood Stability Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily floor</span>
+                            <span>Foundational</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Emotional flatness, low resilience, subtle burnout.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA-forward)</td>
+                                    <td class="compound-dose">1–2 g EPA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate or Threonate</td>
+                                    <td class="compound-dose">200–400 mg elemental</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Vitamin D3</td>
+                                    <td class="compound-dose">1,000–2,000 IU</td>
+                                    <td class="compound-timing">With fat, morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Creatine Monohydrate</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Neuronal membrane health + energy availability. EPA has direct anti-inflammatory effects on brain tissue. Magnesium supports hundreds of enzymatic processes. D3 deficiency correlates strongly with mood dysfunction. Creatine provides ATP buffering for neurons under load.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Slow burn. This fixes the floor, not the ceiling. Don't expect to feel different in a week.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Dopamine-Support / Anhedonia Stack -->
+            <article class="stack" id="mood-anhedonia">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Dopamine-Support / Anhedonia Stack</h3>
+                        <div class="stack-meta">
+                            <span>Reward system</span>
+                            <span>Cycle recommended</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Motivation loss, reward blindness, "nothing hits."</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Tyrosine</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Morning, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Uridine Monophosphate</td>
+                                    <td class="compound-dose">150–300 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">CDP-Choline</td>
+                                    <td class="compound-dose">250–500 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">DHA</td>
+                                    <td class="compound-dose">1 g</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Dopaminergic tone + synaptic rebuilding. Tyrosine is the precursor to dopamine. Uridine + DHA + choline (the "Mr. Happy Stack") supports phospholipid synthesis and dopamine receptor density. This rebuilds capacity rather than forcing output.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Can feel flat if you're overstimulated elsewhere (caffeine, chronic stress). This stack assumes you've removed the noise first.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Irritability / Low Frustration Tolerance Stack -->
+            <article class="stack" id="mood-irritable">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Irritability / Low Frustration Tolerance Stack</h3>
+                        <div class="stack-meta">
+                            <span>Neural noise</span>
+                            <span>Quick-acting</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Snappy, reactive, emotionally brittle.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">300–400 mg</td>
+                                    <td class="compound-timing">Morning and/or evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Taurine</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Morning or afternoon</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (Sensoril) — optional</td>
+                                    <td class="compound-dose">125–250 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Lowers neural noise and sympathetic overdrive. Magnesium calms excitatory signaling. Theanine promotes alpha waves. Taurine is inhibitory and stabilizing. Ashwagandha blunts cortisol spikes that drive reactivity.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Too much = emotional dulling. You want to smooth the edges, not flatten yourself.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Serotonin-Tone / Emotional Range Stack -->
+            <article class="stack" id="mood-numb">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Serotonin-Tone / Emotional Range Stack</h3>
+                        <div class="stack-meta">
+                            <span>Subtle modulation</span>
+                            <span>Slow build</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Emotional numbness, muted affect, low warmth.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Bacopa Monnieri</td>
+                                    <td class="compound-dose">300 mg (55% bacosides)</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Saffron Extract</td>
+                                    <td class="compound-dose">28–30 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">B-Complex (active forms)</td>
+                                    <td class="compound-dose">Low dose</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Subtle serotonin modulation without blunt-force tactics. Saffron has solid evidence for mild mood support—it's one of the few "feel better" compounds that isn't stimulating. Bacopa supports serotonin and memory. Threonate crosses the BBB. B-vitamins as cofactors.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Takes weeks. No acute "lift." This is for people who want their emotional range back, not a hit of good feeling.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>Bacopa can cause fatigue initially and GI upset without food. Saffron should not be combined with SSRIs without medical oversight.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Stress-Adaptive / Mood Resilience Stack -->
+            <article class="stack" id="mood-stress">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Stress-Adaptive / Mood Resilience Stack</h3>
+                        <div class="stack-meta">
+                            <span>Cortisol-driven swings</span>
+                            <span>Timing-sensitive</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Mood swings tied to stress load, decision fatigue.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Rhodiola Rosea</td>
+                                    <td class="compound-dose">200–400 mg (3% rosavins)</td>
+                                    <td class="compound-timing">Morning only</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–300 mg</td>
+                                    <td class="compound-timing">Afternoon/evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">1 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol management → emotional consistency. Rhodiola is adaptogenic—it flattens the stress curve without sedation. PS blunts cortisol. Glycine calms the evening transition. Omega-3s maintain membrane fluidity under stress.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Rhodiola too late = sleep interference. Morning only, no exceptions.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Mood Stack Guardrails</h3>
+                <ul>
+                    <li>Mood issues are often SIGNAL problems, not deficits. Fix the interference first.</li>
+                    <li><strong>Remove suppressors before adding stimulators.</strong> Caffeine, alcohol, sleep debt, chronic stress—these cap your ceiling.</li>
+                    <li>One axis at a time: dopamine, serotonin, cortisol, or baseline stability. Don't shotgun.</li>
+                    <li>If everything feels muted, audit your inputs before blaming your chemistry.</li>
+                    <li>Stack choice should match the day you're mismatched to—not a permanent identity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ENERGY SECTION -->
+        <section id="energy">
+            <div class="section-header">
+                <h2>Energy / Fatigue</h2>
+                <p>Not preworkout. Root-cause energy. Stop mistaking stimulation for capacity.</p>
+            </div>
+
+            <div class="decision-tree" data-section="energy">
+                <h3>What's the pattern?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="energy-baseline">Generally low, running on fumes</button>
+                    <button class="decision-btn" data-target="energy-adrenal">Wired-tired, caffeine dependent</button>
+                    <button class="decision-btn" data-target="energy-crash">Reliable 2-4pm crash</button>
+                    <button class="decision-btn" data-target="energy-lowstim">Need energy without anxiety</button>
+                    <button class="decision-btn" data-target="energy-acute">Occasional push needed</button>
+                </div>
+                <div class="decision-result" id="result-energy">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Foundational Energy / Mito Stack -->
+            <article class="stack" id="energy-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Foundational Energy / Mito Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily floor</span>
+                            <span>Mitochondrial</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">General fatigue, low stamina, "running on fumes."</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Creatine Monohydrate</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">CoQ10 (Ubiquinol preferred)</td>
+                                    <td class="compound-dose">100–200 mg</td>
+                                    <td class="compound-timing">With fat, morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium (Glycinate or Threonate)</td>
+                                    <td class="compound-dose">200–400 mg elemental</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">B-Complex (active forms)</td>
+                                    <td class="compound-dose">Low dose</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>ATP buffering + electron transport chain support + enzymatic cofactors. Creatine is the most underrated energy supplement—it's not just for muscles. CoQ10 is essential for mitochondrial function and declines with age. Magnesium is involved in 300+ enzymatic reactions. B-vitamins are required for energy metabolism.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> No buzz. This fixes capacity, not alertness. If you want to feel wired, this isn't it. If you want to stop feeling depleted, this is the foundation.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Stimulant Debt / Adrenal Recovery Stack -->
+            <article class="stack" id="energy-adrenal">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Stimulant Debt / Adrenal Recovery Stack</h3>
+                        <div class="stack-meta">
+                            <span>Wired-tired</span>
+                            <span>Cortisol reset</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Wired-tired, caffeine dependence, afternoon crash despite stimulants.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (KSM-66 or Sensoril)</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">Morning or evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–300 mg</td>
+                                    <td class="compound-timing">Afternoon/evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">300 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol normalization → energy consistency. If you're wired-tired, your HPA axis is dysregulated. Ashwagandha blunts excessive cortisol. PS prevents the evening cortisol spike that fragments sleep. Magnesium and glycine support recovery. This stack is about debt repayment, not more borrowing.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Too much calming can feel flat initially. That flatness is your nervous system recalibrating—don't fight it with more stimulants.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Pair with</h4>
+                            <p>Caffeine reduction. This stack won't work if you're still pounding 400mg of caffeine daily. Taper down while you rebuild.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Midday Crash Stack -->
+            <article class="stack" id="energy-crash">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Midday Crash / Glucose & Stress Stability Stack</h3>
+                        <div class="stack-meta">
+                            <span>2-4pm crash</span>
+                            <span>Timing-sensitive</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Reliable 2–4pm energy drop.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Tyrosine</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Early afternoon, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Rhodiola Rosea</td>
+                                    <td class="compound-dose">200–300 mg (3% rosavins)</td>
+                                    <td class="compound-timing">Morning or early afternoon</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Chromium Picolinate</td>
+                                    <td class="compound-dose">200 mcg</td>
+                                    <td class="compound-timing">With lunch</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">1 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Dopamine + stress handling + glucose control. The 2pm crash is usually a combination of post-lunch glucose dysregulation and dopamine depletion from morning demands. Tyrosine replenishes dopamine precursors. Rhodiola reduces perceived fatigue. Chromium supports glucose stability. Omega-3s reduce inflammation that contributes to brain fog.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Rhodiola too late = sleep disruption. Don't take it after 2pm. If the crash persists, look at your lunch composition—high glycemic meals guarantee a crash.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Low-Stimulation Clean Energy Stack -->
+            <article class="stack" id="energy-lowstim">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Low-Stimulation Clean Energy Stack</h3>
+                        <div class="stack-meta">
+                            <span>No caffeine</span>
+                            <span>Mitochondrial</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Need energy without heart-rate spike or anxiety.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Acetyl-L-Carnitine (ALCAR)</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Alpha-Lipoic Acid</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">Morning, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Creatine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Fatty-acid transport + mitochondrial efficiency. ALCAR shuttles fatty acids into mitochondria for energy production and has nootropic effects. ALA is a potent antioxidant that supports mitochondrial function. Creatine provides ATP buffering. Threonate supports brain energy without stimulation.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Subtle. Works best with consistency over weeks. ALCAR can be mildly stimulating for some—start at 500mg if you're sensitive.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>ALA can lower blood sugar. If you're diabetic or on glucose-lowering medications, monitor carefully.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Acute But Non-Degenerative Energy Stack -->
+            <article class="stack" id="energy-acute">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Acute But Non-Degenerative Energy Stack</h3>
+                        <div class="stack-meta">
+                            <span>Occasional use</span>
+                            <span>Balanced stimulation</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Occasional push without borrowing tomorrow's energy.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Caffeine</td>
+                                    <td class="compound-dose">50–100 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">100–200 mg</td>
+                                    <td class="compound-timing">With caffeine</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Taurine</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">With caffeine</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Citicoline (optional)</td>
+                                    <td class="compound-dose">250 mg</td>
+                                    <td class="compound-timing">With caffeine</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Smooth alertness without sympathetic overload. Caffeine provides the push. Theanine prevents the jitters. Taurine is inhibitory and protects against overstimulation. Citicoline adds focus without additional stimulation. This is caffeine done right.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Still a loan. Don't make it daily. If you need this every day, you have an energy debt—address the root cause instead of financing it.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Energy Debugging Rules</h3>
+                <ul>
+                    <li>If caffeine works LESS over time → you have stimulant debt, not fatigue. Taper and rebuild.</li>
+                    <li>If rest doesn't restore energy → mitochondrial or chronic stress issue. Fix the machinery.</li>
+                    <li>If energy crashes predictably → glucose + cortisol dysregulation, not motivation. Time and composition matter.</li>
+                    <li><strong>Add capacity first. Add stimulation last.</strong> Most people have this backwards.</li>
+                    <li>Energy is an output, not an input. If you're constantly low, something upstream is broken.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- STRESS SECTION -->
+        <section id="stress">
+            <div class="section-header">
+                <h2>Stress / Resilience</h2>
+                <p>Stacks for rebuilding stress tolerance, normalizing cortisol rhythms, and restoring adaptive capacity.</p>
+            </div>
+
+            <div class="decision-tree" data-section="stress">
+                <h3>What's the pattern?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="stress-baseline">Chronic low-grade stress</button>
+                    <button class="decision-btn" data-target="stress-hpa">Wired at night, tired in morning</button>
+                    <button class="decision-btn" data-target="stress-burnout">Burned out, nothing left</button>
+                    <button class="decision-btn" data-target="stress-nervous">Hypervigilant, slow to recover</button>
+                    <button class="decision-btn" data-target="stress-hardening">Building long-term durability</button>
+                </div>
+                <div class="decision-result" id="result-stress">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Foundational Stress Resilience Stack -->
+            <article class="stack" id="stress-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Foundational Stress Resilience Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily floor</span>
+                            <span>Foundational</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Chronic baseline stress, reduced emotional bandwidth.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate or Threonate</td>
+                                    <td class="compound-dose">300–400 mg elemental</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA/DHA)</td>
+                                    <td class="compound-dose">1–2 g combined</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Creatine Monohydrate</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Vitamin D3</td>
+                                    <td class="compound-dose">1,000–2,000 IU</td>
+                                    <td class="compound-timing">With fat, morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Nervous-system stability + cellular energy buffering. Magnesium calms excitatory signaling. Omega-3s reduce neuroinflammation. Creatine provides ATP buffering under stress. D3 deficiency correlates with impaired stress response. This is infrastructure—nothing fancy, nothing acute.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Slow, quiet, non-stimulating. You won't feel this working—you'll feel worse when you stop.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HPA Axis Normalization Stack -->
+            <article class="stack" id="stress-hpa">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">HPA Axis Normalization Stack</h3>
+                        <div class="stack-meta">
+                            <span>Cortisol rhythm</span>
+                            <span>Evening-weighted</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Dysregulated cortisol—wired at night, tired in morning.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (Sensoril preferred)</td>
+                                    <td class="compound-dose">125–250 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol downshift and rhythm correction. The HPA axis should produce cortisol in the morning and taper by evening. If yours is inverted, you're wired when you should be winding down. Ashwagandha (Sensoril specifically) lowers evening cortisol. PS blunts the nighttime spike. Glycine and magnesium support the transition to rest.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Overuse may feel emotionally muted. Ashwagandha in particular can dull affect if taken indefinitely. Cycle it—6-8 weeks on, 2 weeks off.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Burnout / Adaptive Capacity Stack -->
+            <article class="stack" id="stress-burnout">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Burnout / Adaptive Capacity Stack</h3>
+                        <div class="stack-meta">
+                            <span>Exhaustion</span>
+                            <span>Cycle required</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Stress no longer produces action—only exhaustion.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Rhodiola Rosea</td>
+                                    <td class="compound-dose">200–400 mg (3% rosavins)</td>
+                                    <td class="compound-timing">Morning only</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Eleuthero (Siberian Ginseng)</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">B-Complex (active forms)</td>
+                                    <td class="compound-dose">Low dose</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">1 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Restores stress-response range rather than blunting it. Burnout isn't too much stress response—it's a depleted one. Rhodiola and Eleuthero are true adaptogens: they restore the ability to respond appropriately to stressors. B-vitamins support neurotransmitter synthesis. Omega-3s reduce inflammatory load.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Must be cycled. Daily forever defeats the point—adaptogens are meant to restore capacity, not become permanent crutches. 4-6 weeks on, 2 weeks off.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Timing note</h4>
+                            <p>Both Rhodiola and Eleuthero can be mildly stimulating. Morning only—never after 2pm. If you're still wired at night, drop the Eleuthero first.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Nervous System Recovery Stack -->
+            <article class="stack" id="stress-nervous">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Nervous System Recovery Stack</h3>
+                        <div class="stack-meta">
+                            <span>Hypervigilance</span>
+                            <span>Parasympathetic</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Hypervigilance, irritability, slow recovery after stress.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">As needed / evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Taurine</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Afternoon / evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Apigenin</td>
+                                    <td class="compound-dose">25–50 mg</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Parasympathetic reinforcement + neural quieting. If your nervous system is stuck in "on," you need to train it to downshift. Theanine promotes alpha waves. Taurine is inhibitory and calming. Mag-threonate crosses the BBB and supports GABA. Apigenin is a mild anxiolytic that aids the transition to rest.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Too much = reduced drive. You want to be able to relax, not lose your edge entirely. Titrate to effect.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Long-Term Stress Hardening Stack -->
+            <article class="stack" id="stress-hardening">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Long-Term Stress Hardening Stack</h3>
+                        <div class="stack-meta">
+                            <span>Durability</span>
+                            <span>Slow build</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Need durability, not calm. Building future tolerance.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Creatine</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">CoQ10 (Ubiquinol)</td>
+                                    <td class="compound-dose">100–200 mg</td>
+                                    <td class="compound-timing">With fat, morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Acetyl-L-Carnitine</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">DHA</td>
+                                    <td class="compound-dose">1 g</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Mitochondrial capacity + neuronal resilience under load. This isn't about feeling better today—it's about being harder to break tomorrow. Creatine and CoQ10 support cellular energy production. ALCAR enhances mitochondrial efficiency. DHA maintains membrane integrity. These compounds build the hardware that lets you handle more.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> No immediate relief. This is an investment that pays off over months, not days. If you need acute help, look elsewhere first.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Stress Stack Principles</h3>
+                <ul>
+                    <li><strong>Blunting stress ≠ fixing stress.</strong> Numbing the signal doesn't repair the system.</li>
+                    <li>Resilience is capacity, not numbness. The goal is to respond appropriately, not to feel nothing.</li>
+                    <li>If calm requires constant supplementation, the system is still broken. Supplements support repair—they don't replace it.</li>
+                    <li>Stress repair happens on a timeline, not a dose curve. You can't rush adaptation.</li>
+                    <li>Cycle adaptogens. Permanent crutches defeat the purpose of building resilience.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- GUT-BRAIN SECTION -->
+        <section id="gut">
+            <div class="section-header">
+                <h2>Gut–Brain / Inflammation</h2>
+                <p>Stacks for repairing the interface between digestion, immunity, and mood/energy signaling.</p>
+            </div>
+
+            <div class="decision-tree" data-section="gut">
+                <h3>What's the pattern?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="gut-baseline">General inflammation, vague "off" feeling</button>
+                    <button class="decision-btn" data-target="gut-microbiome">Digestive issues, brain fog after meals</button>
+                    <button class="decision-btn" data-target="gut-inflammation">Chronic aches, inflammatory drag</button>
+                    <button class="decision-btn" data-target="gut-mood">Mood tracks with digestion</button>
+                    <button class="decision-btn" data-target="gut-repair">Suspected food-driven issues</button>
+                </div>
+                <div class="decision-result" id="result-gut">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Foundational Gut Integrity Stack -->
+            <article class="stack" id="gut-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Foundational Gut Integrity Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily floor</span>
+                            <span>Barrier repair</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">General inflammation, food sensitivity, vague "off" feeling.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Glutamine</td>
+                                    <td class="compound-dose">5–10 g</td>
+                                    <td class="compound-timing">Empty stomach, morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Zinc Carnosine</td>
+                                    <td class="compound-dose">75–150 mg</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA/DHA)</td>
+                                    <td class="compound-dose">1–2 g combined</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Supports intestinal lining + reduces inflammatory signaling. L-Glutamine is the primary fuel for enterocytes (gut lining cells). Zinc Carnosine has direct evidence for gut barrier repair. Omega-3s reduce systemic inflammation. Magnesium supports motility and relaxation. This is infrastructure—fix the barrier before chasing downstream symptoms.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Subtle, requires weeks of consistency. You won't feel this acutely—you'll notice when the vague "off" feeling lifts.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Microbiome Support / Butyrate Stack -->
+            <article class="stack" id="gut-microbiome">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Microbiome Support / Butyrate Stack</h3>
+                        <div class="stack-meta">
+                            <span>Digestion</span>
+                            <span>Ramp slowly</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">IBS-adjacent symptoms, inconsistent digestion, brain fog after meals.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Sodium Butyrate or Tributyrin</td>
+                                    <td class="compound-dose">300–600 mg</td>
+                                    <td class="compound-timing">With meals</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Resistant Starch (potato starch or similar)</td>
+                                    <td class="compound-dose">10–20 g</td>
+                                    <td class="compound-timing">Build up slowly</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Probiotic (multi-strain)</td>
+                                    <td class="compound-dose">Low CFU to start</td>
+                                    <td class="compound-timing">Morning, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Inulin or PHGG</td>
+                                    <td class="compound-dose">5 g</td>
+                                    <td class="compound-timing">Build up slowly</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Butyrate = fuel for colon cells + anti-inflammatory signaling to the brain. Short-chain fatty acids (especially butyrate) are produced when gut bacteria ferment fiber. If your microbiome is depleted, you can supplement directly while rebuilding. Resistant starch and prebiotic fiber feed the bacteria that produce butyrate naturally. Probiotics reseed—but they're signals, not permanent residents.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Gas and bloating if ramped too fast. Start low on fiber and resistant starch—your gut bacteria need time to adapt. If it's miserable, you went too fast.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>PHGG = partially hydrolyzed guar gum. It's better tolerated than inulin for most people. If inulin causes distress, switch.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Systemic Inflammation Reduction Stack -->
+            <article class="stack" id="gut-inflammation">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Systemic Inflammation Reduction Stack</h3>
+                        <div class="stack-meta">
+                            <span>Whole-body</span>
+                            <span>Anti-inflammatory</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Chronic aches, low energy, inflammatory mood drag.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Curcumin (bioavailable form)</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">With fat</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA-forward)</td>
+                                    <td class="compound-dose">1–2 g EPA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Quercetin</td>
+                                    <td class="compound-dose">500 mg</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium L-Threonate</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Lowers neuroinflammation → clearer cognition and steadier mood. Curcumin is one of the most potent natural anti-inflammatories, but bioavailability matters—look for phytosome, Meriva, or Longvida forms. EPA directly competes with pro-inflammatory arachidonic acid. Quercetin has anti-inflammatory and mild antihistamine effects. Threonate gets magnesium into the brain where it can calm neuroinflammation.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Curcumin can blunt training adaptation if overused. Inflammation is part of the muscle-building signal—if you're training hard, don't take curcumin around workouts. Save it for non-training days or evening use.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>Standard curcumin powder is poorly absorbed. Don't waste money on cheap turmeric capsules—get a bioavailable form or skip it entirely.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Gut–Brain Signaling / Mood Support Stack -->
+            <article class="stack" id="gut-mood">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Gut–Brain Signaling / Mood Support Stack</h3>
+                        <div class="stack-meta">
+                            <span>Vagus nerve</span>
+                            <span>Mood-digestion link</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Anxiety or low mood that tracks with digestion.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Probiotic (B. longum, L. rhamnosus strains)</td>
+                                    <td class="compound-dose">Per product</td>
+                                    <td class="compound-timing">Morning, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">1 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Vagus-nerve and immune-mediated mood effects. Specific probiotic strains (B. longum 1714, L. rhamnosus JB-1) have research showing mood benefits via gut-brain signaling. Theanine calms without sedation. Glycine supports inhibitory neurotransmission. Omega-3s reduce the inflammatory load that contributes to mood dysfunction. If your mood reliably worsens when your gut is off, this is the lever.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Probiotic effects are highly individual and slow. What works for one person does nothing for another. Give it 4-6 weeks before judging, and don't expect miracles.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Elimination & Repair Phase Stack -->
+            <article class="stack" id="gut-repair">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Elimination & Repair Phase Stack</h3>
+                        <div class="stack-meta">
+                            <span>Short-term</span>
+                            <span>Reset protocol</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Suspected food-driven inflammation or dysbiosis.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Glutamine</td>
+                                    <td class="compound-dose">10 g</td>
+                                    <td class="compound-timing">Empty stomach, AM and PM</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Zinc Carnosine</td>
+                                    <td class="compound-dose">150 mg</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">2 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Digestive Enzymes (broad-spectrum)</td>
+                                    <td class="compound-dose">Per product</td>
+                                    <td class="compound-timing">With meals</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Reduce antigen load while repairing barrier function. If you suspect food-driven inflammation, you need to reduce the immune trigger (undigested proteins crossing a leaky barrier) while healing the gut lining. High-dose glutamine accelerates repair. Zinc Carnosine protects and heals. Digestive enzymes break down food more completely, reducing the antigen load. This pairs with an elimination diet—the stack supports the process.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> This is a phase, not a lifestyle. Run this for 4-8 weeks while identifying trigger foods, then transition to the Foundational stack for maintenance. Permanent high-dose protocols aren't the goal.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Pair with</h4>
+                            <p>An elimination diet. This stack supports repair, but if you keep eating foods that damage the barrier, you're just running in place.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Gut-Brain Principles</h3>
+                <ul>
+                    <li><strong>Inflammation masquerades as depression, fatigue, and anxiety.</strong> If nothing else works, look here.</li>
+                    <li>Fix the barrier before chasing neurotransmitters. A leaky gut means constant immune activation—no stack overcomes that.</li>
+                    <li>Probiotics are signals, not cures. They can help, but they're not magic bullets and effects are highly individual.</li>
+                    <li>If mood improves when digestion stabilizes, you found the lever. Pay attention to the correlation.</li>
+                    <li>Ramp fiber slowly. Your microbiome needs time to adapt—rushing causes misery.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RECOVERY SECTION -->
+        <section id="recovery">
+            <div class="section-header">
+                <h2>Recovery / Sobriety Support</h2>
+                <p>Stacks for stabilizing the nervous system, restoring reward signaling, and rebuilding trust with baseline.</p>
+            </div>
+
+            <div class="decision-tree" data-section="recovery">
+                <h3>Where are you?</h3>
+                <div class="decision-options">
+                    <button class="decision-btn" data-target="recovery-baseline">Early recovery, need stability</button>
+                    <button class="decision-btn" data-target="recovery-anhedonia">Everything feels gray (PAWS)</button>
+                    <button class="decision-btn" data-target="recovery-anxiety">Anxiety, hypervigilance</button>
+                    <button class="decision-btn" data-target="recovery-sleep">Sleep is wrecked</button>
+                    <button class="decision-btn" data-target="recovery-stress">Stress triggers cravings</button>
+                </div>
+                <div class="decision-result" id="result-recovery">
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Foundational Recovery Stack -->
+            <article class="stack" id="recovery-baseline">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Foundational Recovery Stack</h3>
+                        <div class="stack-meta">
+                            <span>Daily</span>
+                            <span>Non-negotiable</span>
+                            <span>Infrastructure</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Nervous system stabilization, emotional volatility, fatigue.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate or Threonate</td>
+                                    <td class="compound-dose">300–400 mg elemental</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s (EPA-forward)</td>
+                                    <td class="compound-dose">1–2 g EPA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Creatine Monohydrate</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Any time</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">B-Complex (active forms)</td>
+                                    <td class="compound-dose">Low dose</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Energy buffering + membrane repair + neurotransmitter synthesis. Substance use depletes magnesium, B-vitamins, and omega-3s. Creatine supports ATP availability in neurons under recovery stress. This is the foundation everything else builds on.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> No "feel." This is infrastructure, not relief. You won't notice it working—you'll notice when you stop.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Dopamine Repair / Anhedonia Stack -->
+            <article class="stack" id="recovery-anhedonia">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Dopamine Repair / Anhedonia Stack</h3>
+                        <div class="stack-meta">
+                            <span>PAWS-focused</span>
+                            <span>Cycle recommended</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Flat reward system, motivation collapse, "life feels gray."</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Tyrosine</td>
+                                    <td class="compound-dose">500–1,000 mg</td>
+                                    <td class="compound-timing">Morning, empty stomach</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Uridine Monophosphate</td>
+                                    <td class="compound-dose">150–300 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">CDP-Choline</td>
+                                    <td class="compound-dose">250–500 mg</td>
+                                    <td class="compound-timing">Morning</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">DHA</td>
+                                    <td class="compound-dose">1 g</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Supports dopamine tone + synaptic rebuilding without spikes. This is the "Mr. Happy Stack" applied to PAWS. Tyrosine provides precursor material. Uridine + DHA + choline rebuild receptor density and membrane integrity. Restoration, not replacement.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Overuse can feel emotionally hollow. Cycle intelligently—5 days on, 2 off, or 3 weeks on, 1 week off.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Anxiety & Nervous System Calm Stack -->
+            <article class="stack" id="recovery-anxiety">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Anxiety & Nervous System Calm Stack</h3>
+                        <div class="stack-meta">
+                            <span>Early sobriety</span>
+                            <span>No GABAergics</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Early sobriety anxiety, hypervigilance, agitation.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">L-Theanine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Taurine</td>
+                                    <td class="compound-dose">1–2 g</td>
+                                    <td class="compound-timing">Morning or afternoon</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">200 mg</td>
+                                    <td class="compound-timing">As needed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Ashwagandha (Sensoril) — optional</td>
+                                    <td class="compound-dose">125–250 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Parasympathetic tilt without GABAergic dependence. Theanine promotes calm without sedation. Taurine is inhibitory and stabilizing. Magnesium supports GABA function indirectly. Ashwagandha blunts cortisol. None of these create new dependencies.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Too much = emotional blunting. Respect the dose. You want the edge off, not the whole blade.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Why no strong GABAergics</h4>
+                            <p>This is non-negotiable for recovery. Phenibut, benzos, high-dose GABA, kava at sedating doses—these all risk trading one dependency for another. The nervous system needs to recalibrate, not find a new crutch.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sleep Repair After Substance Use -->
+            <article class="stack" id="recovery-sleep">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Sleep Repair After Substance Use</h3>
+                        <div class="stack-meta">
+                            <span>Post-substance</span>
+                            <span>Architecture focus</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Fragmented sleep, early wake-ups, non-restorative rest after substance use.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3–5 g</td>
+                                    <td class="compound-timing">Bedtime</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Magnesium Glycinate</td>
+                                    <td class="compound-dose">300 mg</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Apigenin</td>
+                                    <td class="compound-dose">25–50 mg</td>
+                                    <td class="compound-timing">Before bed</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Melatonin (low-dose, short-term)</td>
+                                    <td class="compound-dose">0.3–0.5 mg</td>
+                                    <td class="compound-timing">30 min before bed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Temperature regulation + sleep architecture repair. Substance use fragments sleep architecture—especially REM. Glycine drops core temp. Apigenin supports sleep depth without sedation. Melatonin at micro-doses signals timing only.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Melatonin misuse prolongs dysregulation. Keep it temporary (2–4 weeks max), then drop it. Your circadian system needs to self-regulate.</p>
+
+                        <div class="stack-interactions">
+                            <h4>Note</h4>
+                            <p>This stack is for post-acute sleep issues, not active withdrawal. If you're in acute withdrawal, work with a medical professional.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Stress-Resilience / Relapse Buffer Stack -->
+            <article class="stack" id="recovery-stress">
+                <div class="stack-header">
+                    <div>
+                        <h3 class="stack-title">Stress-Resilience / Relapse Buffer Stack</h3>
+                        <div class="stack-meta">
+                            <span>Craving prevention</span>
+                            <span>Cortisol management</span>
+                        </div>
+                    </div>
+                    <span class="stack-toggle">+</span>
+                </div>
+                <div class="stack-content">
+                    <div class="stack-inner">
+                        <p class="stack-usecase">Stress-triggered cravings, emotional overwhelm.</p>
+                        
+                        <table class="compound-table">
+                            <thead>
+                                <tr>
+                                    <th>Compound</th>
+                                    <th>Dose</th>
+                                    <th>Timing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="compound-name">Phosphatidylserine</td>
+                                    <td class="compound-dose">200–400 mg</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Rhodiola Rosea</td>
+                                    <td class="compound-dose">200–300 mg</td>
+                                    <td class="compound-timing">Morning only</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Omega-3s</td>
+                                    <td class="compound-dose">1 g EPA/DHA</td>
+                                    <td class="compound-timing">With food</td>
+                                </tr>
+                                <tr>
+                                    <td class="compound-name">Glycine</td>
+                                    <td class="compound-dose">3 g</td>
+                                    <td class="compound-timing">Evening</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="stack-rationale">
+                            <h4>Why this works</h4>
+                            <p>Cortisol regulation + improved stress tolerance. Stress is the #1 relapse trigger. PS blunts the cortisol spike. Rhodiola flattens the stress curve. Glycine supports evening wind-down. Omega-3s maintain membrane integrity under chronic stress.</p>
+                        </div>
+
+                        <p class="stack-tradeoff"><strong>Tradeoff:</strong> Rhodiola too late disrupts sleep. Morning only, no exceptions. If you're still wired at night, drop the Rhodiola dose.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="section-notes">
+                <h3>Recovery Stack Principles</h3>
+                <ul>
+                    <li><strong>No strong GABAergics.</strong> No phenibut, no high-dose kava, no dependency transfers. This is non-negotiable.</li>
+                    <li>Recovery favors STABILITY over intensity. If a stack feels "too good," it's probably wrong.</li>
+                    <li>Restoration beats replacement. The goal is to let baseline come back online—not to simulate it chemically.</li>
+                    <li>These stacks support recovery. They don't replace therapy, community, or the hard internal work.</li>
+                    <li>If you're in acute withdrawal, work with a medical professional. This is for post-acute support.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>SharpStacks is not medical advice. These are protocols that have worked for some people, documented honestly. Consult a professional if you're on medications or have health conditions.</p>
+            <p>No affiliate links. No monetization. Built by <a href="https://mattlivingston.com">Matt Livingston</a>.</p>
+            <p class="last-updated">Last updated: January 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.stack-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const stack = header.parentElement;
+                const wasOpen = stack.classList.contains('open');
+                
+                // Close all others (optional - remove if you want multiple open)
+                // document.querySelectorAll('.stack').forEach(s => s.classList.remove('open'));
+                
+                // Toggle current
+                stack.classList.toggle('open');
+            });
+        });
+
+        // Decision tree functionality
+        const decisionMappings = {
+            'focus-baseline': { target: 'focus-baseline', text: 'Start with the <a href="#focus-baseline">Baseline Focus Stack</a>. It\'s boring, but it works. Build from there.' },
+            'focus-deep': { target: 'focus-deep', text: 'The <a href="#focus-deep">Deep Work Stack</a> is built for this. Dopamine + acetylcholine under load.' },
+            'focus-wired': { target: 'focus-wired', text: 'You need the <a href="#focus-wired">Stress-Resilient Focus Stack</a>. Cortisol is the enemy here.' },
+            'focus-start': { target: 'focus-start', text: 'Task initiation is frontal-lobe territory. Try the <a href="#focus-start">Executive Function Stack</a>. It\'s slow but structural.' },
+            'focus-acute': { target: 'focus-acute', text: '<a href="#focus-acute">Fast-Acting Focus</a>. Simple, predictable, fast. Don\'t make it a habit.' },
+            'focus-lowstim': { target: 'focus-lowstim', text: 'The <a href="#focus-lowstim">Low-Stimulation Clarity Stack</a> skips caffeine entirely. Takes weeks, zero jitters.' },
+            'sleep-baseline': { target: 'sleep-baseline', text: 'Start with the <a href="#sleep-baseline">Foundational Sleep Stack</a>. Boring on purpose. Works for most.' },
+            'sleep-mind': { target: 'sleep-mind', text: 'Racing thoughts need the <a href="#sleep-mind">Overactive Mind Stack</a>. Calm without sedation.' },
+            'sleep-cortisol': { target: 'sleep-cortisol', text: 'Classic cortisol dysregulation. The <a href="#sleep-cortisol">Cortisol Control Stack</a> targets this specifically.' },
+            'sleep-quality': { target: 'sleep-quality', text: 'Sleep architecture issue. Try the <a href="#sleep-quality">Sleep Architecture & Recovery Stack</a>. Subtle, takes time.' },
+            'sleep-acute': { target: 'sleep-acute', text: '<a href="#sleep-acute">Acute Shutdown Stack</a>. Emergency use only. If you need this nightly, fix something upstream.' },
+            'mood-baseline': { target: 'mood-baseline', text: 'Start with the <a href="#mood-baseline">Baseline Mood Stability Stack</a>. Fix the floor first.' },
+            'mood-anhedonia': { target: 'mood-anhedonia', text: 'Reward system needs rebuilding. The <a href="#mood-anhedonia">Dopamine-Support / Anhedonia Stack</a> addresses this without chasing spikes.' },
+            'mood-irritable': { target: 'mood-irritable', text: 'Neural noise is high. The <a href="#mood-irritable">Irritability Stack</a> lowers sympathetic overdrive.' },
+            'mood-numb': { target: 'mood-numb', text: 'Emotional range issue. The <a href="#mood-numb">Serotonin-Tone Stack</a> is subtle but restorative. Takes weeks.' },
+            'mood-stress': { target: 'mood-stress', text: 'Cortisol-driven swings need the <a href="#mood-stress">Stress-Adaptive Stack</a>. Timing matters here.' },
+            'recovery-baseline': { target: 'recovery-baseline', text: 'The <a href="#recovery-baseline">Foundational Recovery Stack</a> is non-negotiable infrastructure. Start here.' },
+            'recovery-anhedonia': { target: 'recovery-anhedonia', text: 'PAWS is brutal. The <a href="#recovery-anhedonia">Dopamine Repair Stack</a> supports restoration without shortcuts.' },
+            'recovery-anxiety': { target: 'recovery-anxiety', text: 'Early sobriety anxiety needs the <a href="#recovery-anxiety">Nervous System Calm Stack</a>. No GABAergics, no new dependencies.' },
+            'recovery-sleep': { target: 'recovery-sleep', text: '<a href="#recovery-sleep">Sleep Repair After Substance Use</a>. Architecture-focused, not sedation-focused.' },
+            'recovery-stress': { target: 'recovery-stress', text: 'Stress-triggered cravings need the <a href="#recovery-stress">Relapse Buffer Stack</a>. Cortisol is the trigger—blunt it.' },
+            'energy-baseline': { target: 'energy-baseline', text: 'Start with the <a href="#energy-baseline">Foundational Energy / Mito Stack</a>. Fix capacity before adding stimulation.' },
+            'energy-adrenal': { target: 'energy-adrenal', text: 'Classic stimulant debt. The <a href="#energy-adrenal">Adrenal Recovery Stack</a> helps you repay it.' },
+            'energy-crash': { target: 'energy-crash', text: 'The <a href="#energy-crash">Midday Crash Stack</a> targets glucose and dopamine timing. Watch your lunch too.' },
+            'energy-lowstim': { target: 'energy-lowstim', text: '<a href="#energy-lowstim">Low-Stimulation Clean Energy</a>. Mitochondrial support without the heart-rate spike.' },
+            'energy-acute': { target: 'energy-acute', text: '<a href="#energy-acute">Acute But Non-Degenerative Energy</a>. Occasional use only—this is still a loan.' },
+            'stress-baseline': { target: 'stress-baseline', text: 'Start with the <a href="#stress-baseline">Foundational Stress Resilience Stack</a>. Infrastructure first.' },
+            'stress-hpa': { target: 'stress-hpa', text: 'Classic HPA dysregulation. The <a href="#stress-hpa">HPA Axis Normalization Stack</a> targets cortisol rhythm specifically.' },
+            'stress-burnout': { target: 'stress-burnout', text: 'Burned out means depleted, not overwhelmed. The <a href="#stress-burnout">Burnout Stack</a> restores adaptive capacity.' },
+            'stress-nervous': { target: 'stress-nervous', text: 'Stuck in "on" mode. The <a href="#stress-nervous">Nervous System Recovery Stack</a> trains the downshift.' },
+            'stress-hardening': { target: 'stress-hardening', text: '<a href="#stress-hardening">Long-Term Stress Hardening</a>. No immediate relief—this is about being harder to break later.' },
+            'gut-baseline': { target: 'gut-baseline', text: 'Start with the <a href="#gut-baseline">Foundational Gut Integrity Stack</a>. Fix the barrier first.' },
+            'gut-microbiome': { target: 'gut-microbiome', text: 'Digestive issues need the <a href="#gut-microbiome">Microbiome Support / Butyrate Stack</a>. Ramp slowly.' },
+            'gut-inflammation': { target: 'gut-inflammation', text: 'Systemic inflammation responds to the <a href="#gut-inflammation">Inflammation Reduction Stack</a>. Bioavailable curcumin matters.' },
+            'gut-mood': { target: 'gut-mood', text: 'Mood tracking digestion? The <a href="#gut-mood">Gut-Brain Signaling Stack</a> targets the vagus nerve pathway.' },
+            'gut-repair': { target: 'gut-repair', text: '<a href="#gut-repair">Elimination & Repair Phase</a>. Short-term reset—pair with an elimination diet.' }
+        };
+
+        document.querySelectorAll('.decision-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.target;
+                const section = btn.closest('.decision-tree').dataset.section;
+                const resultDiv = document.getElementById(`result-${section}`);
+                
+                // Update button states
+                btn.closest('.decision-options').querySelectorAll('.decision-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Show result
+                const mapping = decisionMappings[target];
+                if (mapping) {
+                    resultDiv.innerHTML = `<p>${mapping.text}</p>`;
+                    resultDiv.classList.add('visible');
+                    
+                    // Open the target stack
+                    const targetStack = document.getElementById(mapping.target);
+                    if (targetStack) {
+                        targetStack.classList.add('open');
+                        // Smooth scroll to it
+                        setTimeout(() => {
+                            targetStack.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- * lone wolf, own tools | Matt Livingston -->
+</body>
+</html>
